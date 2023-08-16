@@ -1,0 +1,384 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/********************************** Header ***************************/
+header {
+    background-color: #0046BE;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav {
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0046BE;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+#searchbar {
+    width: 640px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding-inline: 10px;
+
+}
+
+/********************************** Header ***************************/
+
+
+/********************************** Body ***************************/
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1600px;
+    margin: auto;
+}
+
+article h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.-wide .card {
+    display: flex;
+    min-height: 300px;
+}
+
+.text {
+    padding-top: 40px;
+}
+
+.card h3 {
+    color: white;
+}
+
+.-wide .card img {
+    height: 100%;
+    width: auto;
+
+}
+
+.card {
+    background: linear-gradient(#0046BE, #0D6CFC);
+    margin: 20px;
+    border-radius: 10px;
+    display: inline;
+    align-items: left;
+}
+
+button {
+
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    font-weight: 500;
+}
+
+#shop-now .card {
+    background: rgb(255, 255, 255) !important;
+    width: 250px;
+
+}
+
+#shop-now .card h6 {
+    font-size: 0.75em;
+}
+
+#shop-now .card p {
+    font-size: 0.75em;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#top-sellers {
+    background: linear-gradient(#0046BE, #0D6CFC);
+    border-radius: 10px
+}
+
+#top-sellers .card {
+    background: rgb(255, 255, 255) !important;
+    width: 250px;
+}
+
+#top-sellers .card h6 {
+    font-size: 0.75em;
+}
+
+#top-sellers h1 {
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    height: 100%;
+}
+
+#top-sellers .card p {
+    align-items: c;
+    font-size: 0.75em;
+}
+
+
+.account-page {
+    display: grid;
+    max-width: 1200px;
+ gap: 20px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+   margin: auto;
+   
+   
+}
+
+.item {
+    max-width: 300px;
+}
+
+.account-page .card {
+    background: rgb(251, 251, 251) !important;
+    height: auto;
+    max-width: none;
+   margin: 0;
+   box-shadow:  1px 10px 10px rgb(198, 198, 198);
+   
+}
+.account-page .card h6 {
+    width: 100%;
+}
+.account-page .card:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+}
+
+.account-page  img {
+    width: 195px;
+}
+.account-page .card:nth-child(1) img {
+    width: 200px;
+}
+
+@media screen and (min-width: 720px) {
+
+    .account-page .card:nth-child(1) {
+        grid-column: span 4/ auto;
+    }
+
+    .account-page .card:nth-child(2) {
+        grid-column: span 2/ auto;
+    }
+
+    .account-page .card:nth-child(3) {
+        grid-column: span 2/ auto;
+    }
+  
+    .account-page .card:nth-child(5) {
+        grid-column: span 3/ auto;
+    }
+
+}
+
+/********************************** Body ***************************/
+/********************************** Body - details ***************************/
+.details-page {
+    max-width: 1600px;
+    margin: 100px 40px 40px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+#below {
+    margin: 100px;
+    width: 900px;
+}
+
+.details-page .gallery {
+    max-width: 600px;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    padding: 20px;
+
+}
+
+.details-page .gallery .cover-image {
+    grid-column: span 4;
+    width: 100%;
+
+}
+#right-side {
+    position: relative;
+}
+
+.availability {
+   
+    position: absolute;
+    top: 200px;
+    display: flex;
+  flex-wrap: wrap;
+padding-left:  80px;
+padding-right: 80px;
+padding-bottom: 40px;
+   width:  500px;
+    height: 300px;
+    background-color: #fafdfe;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.availability button {
+    width: 50%;
+}
+.availability button:nth-child(1) {
+    background-color: #EBEBEB;
+    font-weight: 600;
+}
+.availability button:nth-child(2) {
+    background-color: #0046BE;
+    color: white;
+    font-weight: 600;
+}
+.availability button:nth-child(4) {
+    background-color: #FFCE00;
+    font-weight: 600;
+    width: 100%;
+}
+
+
+.warranty {
+    width: 600px;
+    height: 300px;
+    background-color: #fafdfe;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/********************************** Body - details ***************************/
+
+.hero {
+    display: flex;
+    width: 100%;
+    background-color: #0D6CFC;
+
+}
+.hero div {
+    width: 40%;
+    margin: auto;
+}
+.hero div button {
+    display: inline;
+}
+.hero h1 {
+    color:white;
+}
+.hero p {
+    color: white;
+}
+
+.phone-categories ul li a {
+ 
+    display: flex;
+    margin: auto;
+}
+.phone-categories {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.phone-categories ul li h3 {
+    margin: auto;
+  }
+.phone-categories ul li p {
+    width: 900px;
+  margin: auto;
+}
+/********************************** Body - details ***************************/
+
+
+footer {
+
+    height: auto;
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 11pt;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+footer .searchbar {
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 100px ;
+   
+}
+footer .links {
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+footer .links div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   width: auto;
+}
+
+footer a {
+    color: black;
+    font-size: 0.65em;
+    font-weight: 300;
+
+}
+
+
+/********************************** mobile ***************************/
+@media screen and (max-width: 720px) {
+    
+
+*{
+    max-width: 400px;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0px;
+    text-align: left;
+    font-size: 12pt;
+    
+}
+}
